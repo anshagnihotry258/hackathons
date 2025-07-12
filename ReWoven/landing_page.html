@@ -11,7 +11,7 @@
       --radius: 6px;
       --accent: #78c952;
 
-      /* Dark Mode Defaults */
+
       --bg-page: #121212;
       --bg-panel: #1e1e1e;
       --bg-card: #282828;
@@ -31,7 +31,7 @@
       --border: #cccccc;
     }
 
-    /* Base */
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -57,7 +57,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Header */
+
     header {
       display: flex;
       justify-content: space-between;
@@ -106,7 +106,7 @@
       transform: scale(1.1);
     }
 
-    /* Toggle Switch */
+
     .theme-toggle {
       position: relative;
       width: 50px;
@@ -151,7 +151,7 @@
       transform: translateX(26px);
     }
 
-    /* Search */
+
     .search-bar {
       display: flex;
       margin: 20px 0;
@@ -185,7 +185,7 @@
       height: 20px;
     }
 
-    /* Hero */
+
     .hero-images {
       background-color: var(--bg-card);
       padding: 2rem;
@@ -197,7 +197,7 @@
       align-items: center;
     }
 
-    /* Categories */
+
     .categories {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -222,7 +222,7 @@
       cursor: pointer;
     }
 
-    /* Products */
+
     .product-listings {
       display: flex;
       flex-wrap: wrap;
@@ -285,7 +285,7 @@
       font-size: 1.2rem;
     }
 
-    /* Footer */
+
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -390,7 +390,7 @@
   const cartButton = document.querySelector('.cart-button');
   const body = document.body;
 
-  // Load saved preference
+
   if (localStorage.getItem('theme') === 'light') {
     body.classList.add('light');
     themeToggle.checked = true;
@@ -414,7 +414,7 @@
     window.location.href = 'cart.html';
   });
 
-  // Product Listing Logic
+
   const products = [
     {
       id: 1,
@@ -453,7 +453,7 @@
     });
   });
 
-  // Carousel
+
   const carouselImages = [
     'images/banner1.jpg',
     'images/banner2.jpg',
