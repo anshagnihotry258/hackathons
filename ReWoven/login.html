@@ -90,12 +90,12 @@
 </head>
 <body>
   <div class="container" id="form-container">
-    <!-- Will be filled by JS -->
+   
   </div>
 
   <script>
     const container = document.getElementById("form-container");
-    const API = "http://127.0.0.1:8000"; // Change if hosted
+    const API = "http://127.0.0.1:8000"; 
 
     async function loginHandler(e) {
       e.preventDefault();
@@ -106,7 +106,7 @@
       // Admin shortcut
       if (email === "admin" && password === "admin") {
         alert("Admin login successful!");
-        window.location.href = "admin.html"; // <-- Add your admin page here
+        window.location.href = "admin.html"; 
         return;
       }
 
@@ -208,7 +208,7 @@
         return;
       }
 
-      alert("Sign up functionality is under development."); // Placeholder
+      alert("Sign up functionality is under development."); 
     }
 
     function oauthLogin(provider) {
@@ -220,7 +220,7 @@
       const token = localStorage.getItem("access_token");
       if (token) {
         alert("Welcome back!");
-        window.location.href = "landing_page.html"; // or dashboard
+        window.location.href = "landing_page.html";
       } else {
         renderLogin();
       }
