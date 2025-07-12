@@ -143,8 +143,6 @@
     .theme-toggle input:checked + .slider::before {
       transform: translateX(26px);
     }
-
-    /* Nav Buttons */
     .nav-buttons {
       display: flex;
       justify-content: center;
@@ -167,8 +165,6 @@
       border-color: var(--accent);
       color: var(--bg-panel);
     }
-
-    /* Section Title */
     .section-title {
       border-bottom: 2px solid var(--accent);
       padding-bottom: 4px;
@@ -177,8 +173,6 @@
       padding-left: 12px;
       user-select: none;
     }
-
-    /* Users List */
     .users-list {
       display: flex;
       flex-direction: column;
@@ -198,7 +192,6 @@
       background-color: var(--bg-card);
     }
 
-    /* User Card */
     .user-card {
       background-color: var(--bg-card);
       border-radius: 12px;
@@ -246,7 +239,6 @@
       color: var(--text-muted);
     }
 
-    /* Action Buttons */
     .user-actions {
       display: flex;
       flex-direction: column;
@@ -269,8 +261,6 @@
       border-color: var(--accent);
       color: var(--bg-panel);
     }
-
-    /* Responsive */
     @media (max-width: 600px) {
       .nav-buttons {
         flex-wrap: wrap;
@@ -346,12 +336,11 @@
       aria-live="polite"
       aria-relevant="all"
     >
-      <!-- User cards will go here -->
     </section>
   </main>
 
   <script>
-    // Theme persistence
+
     const toggle = document.getElementById('modeToggle');
     const currentMode = localStorage.getItem('theme') || 'dark';
     if (currentMode === 'light') {
@@ -368,7 +357,7 @@
       }
     });
 
-    // Sample user data
+    
     const users = [
       {
         id: 1,
@@ -465,7 +454,7 @@
       filtered.forEach((u) => userListEl.appendChild(createUserCard(u)));
     }
 
-    // Navigation & Search
+
     navButtons.forEach((btn) =>
       btn.addEventListener('click', () => {
         navButtons.forEach((b) => {
@@ -504,7 +493,7 @@
       renderUserList(e.target.value.trim());
     });
 
-    // Initial render
+
     renderUserList();
   </script>
 </body>
