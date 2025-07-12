@@ -50,7 +50,7 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Top Bar */
+
     header.top-bar {
       width: 100%;
       max-width: 1000px;
@@ -97,7 +97,7 @@
       transition: background-color 0.3s ease;
     }
 
-    /* Top section: profile pic and details */
+
     .top-section {
       display: flex;
       gap: 28px;
@@ -132,7 +132,7 @@
       color: var(--text-primary);
     }
 
-    /* User details grid */
+
     .details-grid {
       flex: 1;
       display: grid;
@@ -163,7 +163,7 @@
       word-break: break-word;
     }
 
-    /* Description */
+
     .description {
       background-color: var(--bg-card);
       border-radius: 12px;
@@ -175,14 +175,14 @@
       user-select: text;
     }
 
-    /* Purchases section */
+  
     .purchases-section {
       display: flex;
       flex-direction: column;
       gap: 18px;
     }
 
-    /* Each row of purchases and header */
+
     .purchase-row {
       display: flex;
       align-items: center;
@@ -215,7 +215,7 @@
       outline: none;
     }
 
-    /* Items grid 4 per row */
+
     .items-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -258,7 +258,6 @@
       user-select: text;
     }
 
-    /* Theme toggle fixed top right */
     .theme-toggle-wrapper {
       position: fixed;
       top: 16px;
@@ -304,7 +303,6 @@
       transform: translateX(26px);
     }
 
-    /* Responsive adjustments */
     @media (max-width: 800px) {
       .top-section {
         flex-direction: column;
@@ -350,7 +348,7 @@
   </header>
 
   <main class="dashboard" role="main" aria-label="User dashboard">
-    <!-- Top Section: Profile + Details -->
+
     <section class="top-section">
       <div class="profile-column" aria-label="User profile">
         <div class="profile-pic" aria-hidden="true">JD</div>
@@ -393,12 +391,12 @@
       </div>
     </section>
 
-    <!-- Description -->
+
     <section class="description" aria-label="User description">
       John is an avid collector of vintage furniture and modern art pieces. Loves to discover unique items and has been a loyal member of our platform for over 4 years.
     </section>
 
-    <!-- Purchases and Listed items -->
+
     <section class="purchases-section" aria-label="User purchases and listings">
 
       <div class="purchase-row" aria-label="Listed purchases">
@@ -451,7 +449,7 @@
     </section>
   </main>
 
-  <!-- Theme toggle fixed top right -->
+
   <div class="theme-toggle-wrapper" aria-label="Toggle light and dark mode">
     <label class="theme-toggle" for="toggleTheme">
       <input type="checkbox" id="toggleTheme" />
@@ -460,7 +458,7 @@
   </div>
 
   <script>
-    // Theme toggle with persistence
+
     const reviewButton = document.querySelector('.review-btn')
     const toggleTheme = document.getElementById('toggleTheme');
     const body = document.body;
