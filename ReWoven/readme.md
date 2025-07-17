@@ -14,8 +14,9 @@ This project promotes eco-conscious clothing, encouraging users to buy less and 
 💡 **Clean UI/UX** – Minimal, modern, and purpose-driven.
 ♻️ **Sustainability Messaging** – Strong branding around eco-conscious fashion.
 
+---
 
-## 🚀 Pages & Functionality
+🚀 Pages & Functionality
 login page - allows user to login to their profile or signup using email
 profile button - takes user to its profile
 cart option - to look all saved items
